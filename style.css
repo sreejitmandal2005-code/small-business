@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  color: white;
+  background: black;
+  overflow-x: hidden;
+}
+
+/* 🌌 Animated Stars */
+.stars {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/stardust.png');
+  animation: moveStars 50s linear infinite;
+  z-index: -1;
+}
+
+@keyframes moveStars {
+  from {background-position: 0 0;}
+  to {background-position: 10000px 10000px;}
+}
+
+/* 🔘 Menu */
+.menu-btn {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+  position: fixed;
+  right: 20px;
+  top: 60px;
+  background: rgba(0,0,0,0.8);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+/* Sections */
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Logo */
+.logo {
+  width: 120px;
+}
+
+/* Gallery */
+.gallery img {
+  width: 200px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* Popup */
+#popup {
+  display: none;
+  position: fixed;
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#popup img {
+  max-width: 90%;
+}
+
+/* Pricing */
+.price-card {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Mobile */
+@media(max-width: 600px){
+  .gallery img {
+    width: 90%;
+  }
+}
