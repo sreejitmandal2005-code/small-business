@@ -3,75 +3,78 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Resin Creations</title>
+<title>Custom Resin Store</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- 3 DOT MENU -->
-<div class="menu-icon" onclick="toggleMenu()">
-  <div></div>
-  <div></div>
-  <div></div>
-</div>
+<!-- 🌌 Background -->
+<div class="stars"></div>
 
-<nav id="menu">
-  <a href="#home">Home</a>
+<!-- 🔘 3 Dot Menu -->
+<div class="menu-btn" onclick="toggleMenu()">⋮</div>
+
+<div class="menu" id="menu">
   <a href="#about">About</a>
   <a href="#products">Products</a>
   <a href="#pricing">Pricing</a>
   <a href="#contact">Contact</a>
-</nav>
+</div>
 
-<!-- HERO -->
-<section id="home">
-  <h1>Custom Resin Art</h1>
-  <p>Keychains & Earrings</p>
+<!-- 🏠 Hero -->
+<section class="hero">
+  <h1>Custom Resin Creations</h1>
+  <p>Keychains & Earrings ✨</p>
 </section>
 
-<!-- ABOUT -->
+<!-- 👤 About -->
 <section id="about">
+  <img src="logo.png" class="logo">
   <h2>About Us</h2>
-  <div class="logo">RC</div>
-  <p>Handmade resin creations personalized with initials, colors & glitter.</p>
+  <p>We create handmade resin keychains and earrings customized with initials, colors, and glitter.</p>
 </section>
 
-<!-- PRODUCTS -->
+<!-- 🛍 Products -->
 <section id="products">
-  <h2>Products</h2>
+  <h2>Our Products</h2>
+
   <div class="gallery">
-    <img src="images/p1.jpg" onclick="openImage(this)">
-    <img src="images/p2.jpg" onclick="openImage(this)">
-    <img src="images/p3.jpg" onclick="openImage(this)">
+    <img src="product1.jpg" onclick="openImage(this.src)">
+    <img src="product2.jpg" onclick="openImage(this.src)">
+    <img src="product3.jpg" onclick="openImage(this.src)">
   </div>
 </section>
 
-<!-- FULL SCREEN IMAGE -->
+<!-- 💰 Pricing -->
+<section id="pricing">
+  <h2>Pricing</h2>
+  <div class="price-card">
+    <p>Keychains: ₹149</p>
+    <p>Earrings: ₹199</p>
+    <p>Custom Designs: ₹249+</p>
+  </div>
+</section>
+
+<!-- 📞 Contact -->
+<section id="contact">
+  <h2>Contact</h2>
+
+  <a href="https://wa.me/911234567890?text=Hi%20I%20want%20to%20order%20resin%20products" target="_blank">
+    Order on WhatsApp
+  </a>
+
+  <br><br>
+
+  <a href="https://instagram.com/yourusername" target="_blank">
+    Visit Instagram
+  </a>
+</section>
+
+<!-- 🔍 Fullscreen Image -->
 <div id="popup" onclick="closeImage()">
   <img id="popup-img">
 </div>
-
-<!-- PRICING -->
-<section id="pricing">
-  <h2>Pricing</h2>
-  <ul>
-    <li>Keychains: ₹99 - ₹199</li>
-    <li>Earrings: ₹149 - ₹249</li>
-    <li>Custom Orders: Starting ₹199</li>
-  </ul>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <h2>Order Now</h2>
-  <a href="https://wa.me/9168392740?text=I%20want%20to%20order%20resin%20products" target="_blank">
-    Order on WhatsApp
-  </a>
-  <br><br>
-  <a href="https://instagram.com/_.sreejit._7" target="_blank">
-    Instagram
-  </a>
-</section>
 
 <script src="script.js"></script>
 </body>
